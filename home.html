@@ -30,11 +30,29 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <!-- owl -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./owlcarousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./owlcarousel/dist/assets/owl.theme.default.min.css"
+    />
 
     <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
-    <header>
+    <section class="header-top">
       <div class="header-info">
         <div class="info-left">
           <a href="#">Have any question ?</a>
@@ -54,42 +72,711 @@
           <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
+    </section>
+    <header>
+      <div class="header-fix">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+          <div class="logo">
+            <a class="navbar-brand" href="#">
+              <img src="./img/logo.png" alt="" /><span>Studious</span></a
+            >
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse menu"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Course</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Blog Posts</a>
+                  <a class="dropdown-item" href="#">Post Single</a>
+                  <a class="dropdown-item" href="#">404 Page</a>
+                  <a class="dropdown-item" href="#">Email Template</a>
+                  <a class="dropdown-item" href="#">Landing Page</a>
+                  <a class="dropdown-item" href="#">ShortCodes</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <div class="input-search">
+              <form class="form-inline my-2 my-lg-0">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Enter Keyword"
+                  aria-label="Search"
+                />
+                <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+              </form>
+            </div>
+            <div class="theme">
+              <a href="#"><i class="fa-solid fa-moon"></i></a>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
+    <!-- carousel -->
+    <section class="slider">
+      <div class="owl-carousel owl-theme">
+        <div class="slide slide-1">
+          <div class="slide-content">
+            <h1>Master the Skill to Drive your Carrer</h1>
+            <button>Know More <i class="fa-solid fa-right-long"></i></button>
+          </div>
+        </div>
+        <div class="slide slide-2">
+          <div class="slide-content">
+            <h1>Studious is the best choice for everyone</h1>
+            <button>Know More <i class="fa-solid fa-right-long"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="card">
+      <div class="container">
+        <div class="content">
+          <div class="item item1">
+            <i class="fa-solid fa-gears"></i>
+            <h5>
+              <a href="courses.html" class="title-head"
+                >Engineering &amp; Architecture</a
+              >
+            </h5>
+          </div>
+          <div class="item item2">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            <h3>
+              <a href="courses.html" class="title-head">Learning Management</a>
+            </h3>
+          </div>
+          <div class="item item3">
+            <i class="fa fa-coffee" aria-hidden="true"></i>
+            <h3>
+              <a href="courses.html" class="title-head"
+                >Business &amp; Management</a
+              >
+            </h3>
+          </div>
+          <div class="item item4">
+            <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+            <h3>
+              <a href="courses.html" class="title-head"
+                >Artificial Intelligence</a
+              >
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="studious">
+      <div class="container">
+        <div class="title">
+          <h3>Welcome to <span>Studious</span></h3>
+          <div class="line1"></div>
+          <br />
+          <div class="line2"></div>
+        </div>
+        <div class="stu-card">
+          <div class="info">
+            <div class="icon">
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            </div>
+            <div class="content">
+              <div class="item">
+                <h4><a href="#">Trending Courses</a></h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+                  eiusmod te incididunt
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="icon">
+              <i class="fa fa-users" aria-hidden="true"></i>
+            </div>
+            <div class="content">
+              <div class="item">
+                <h4><a href="#">Trending Courses</a></h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+                  eiusmod te incididunt
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <div class="icon">
+              <i class="fa fa-book" aria-hidden="true"></i>
+            </div>
+            <div class="content">
+              <div class="item">
+                <h4><a href="#">Trending Courses</a></h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+                  eiusmod te incididunt
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="started">
+      <div class="container">
+        <div class="title">
+          <h3>Pick a Course to <span>Get Started</span></h3>
+          <div class="line1"></div>
+          <br />
+          <div class="line2"></div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="item">
+              <div class="item-up">
+                <a href="#" class="orange">Art </a>
+                <a href="#" class="green"> Design</a>
+              </div>
+              <div class="item-down">
+                <div class="price">$400</div>
+                <div class="course">
+                  <div class="level">
+                    <i class="fa fa-signal" aria-hidden="true"></i>
+                    Intermediate
+                  </div>
+                  <div class="time">
+                    <i class="fa-solid fa-clock"></i>10 week
+                  </div>
+                </div>
+                <div class="main">
+                  <h5>Donec sed teus enime</h5>
+                  <p>
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class="item-footer">
+                <div class="rate">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <a href="#"
+                  >Know Details
+                  <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="item">
+              <div class="item-up item-up2">
+                <a href="#" class="orange">Digitial </a>
+                <a href="#" class="green"> Learn</a>
+                <a href="#" class="blue"> Off 10%</a>
+              </div>
+              <div class="item-down">
+                <div class="price">$900</div>
+                <div class="course">
+                  <div class="level">
+                    <i class="fa fa-signal" aria-hidden="true"></i>
+                    High
+                  </div>
+                  <div class="time">
+                    <i class="fa-solid fa-clock"></i>10 week
+                  </div>
+                </div>
+                <div class="main">
+                  <h5>Donec sed teus enime</h5>
+                  <p>
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class="item-footer">
+                <div class="rate">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <a href="#"
+                  >Know Details
+                  <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="item">
+              <div class="item-up item-up3">
+                <a href="#" class="orange">Html</a>
+                <a href="#" class="green"> Java</a>
+              </div>
+              <div class="item-down">
+                <div class="price">$99</div>
+                <div class="course">
+                  <div class="level">
+                    <i class="fa fa-signal" aria-hidden="true"></i>
+                    Beginner
+                  </div>
+                  <div class="time">
+                    <i class="fa-solid fa-clock"></i>10 week
+                  </div>
+                </div>
+                <div class="main">
+                  <h5>Donec sed teus enime</h5>
+                  <p>
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class="item-footer">
+                <div class="rate">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <a href="#"
+                  >Know Details
+                  <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="item">
+              <div class="item-up item-up4">
+                <a href="#" class="orange">website </a>
+                <a href="#" class="green"> Wordpress</a>
+              </div>
+              <div class="item-down">
+                <div class="price">$369</div>
+                <div class="course">
+                  <div class="level">
+                    <i class="fa fa-signal" aria-hidden="true"></i>
+                    Intermediate
+                  </div>
+                  <div class="time">
+                    <i class="fa-solid fa-clock"></i>10 week
+                  </div>
+                </div>
+                <div class="main">
+                  <h5>Donec sed teus enime</h5>
+                  <p>
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class="item-footer">
+                <div class="rate">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <a href="#"
+                  >Know Details
+                  <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="item">
+              <div class="item-up item-up5">
+                <a href="#" class="orange">Marketing </a>
+                <a href="#" class="green"> Edu</a>
+              </div>
+              <div class="item-down">
+                <div class="price">$499</div>
+                <div class="course">
+                  <div class="level">
+                    <i class="fa fa-signal" aria-hidden="true"></i>
+                    High
+                  </div>
+                  <div class="time">
+                    <i class="fa-solid fa-clock"></i>10 week
+                  </div>
+                </div>
+                <div class="main">
+                  <h5>Donec sed teus enime</h5>
+                  <p>
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class="item-footer">
+                <div class="rate">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <a href="#"
+                  >Know Details
+                  <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="item">
+              <div class="item-up item-up6">
+                <a href="#" class="orange">Stdudy </a>
+                <a href="#" class="green"> Academic</a>
+              </div>
+              <div class="item-down">
+                <div class="price">$289</div>
+                <div class="course">
+                  <div class="level">
+                    <i class="fa fa-signal" aria-hidden="true"></i>
+                    Beginner
+                  </div>
+                  <div class="time">
+                    <i class="fa-solid fa-clock"></i>10 week
+                  </div>
+                </div>
+                <div class="main">
+                  <h5>Donec sed teus enime</h5>
+                  <p>
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+              </div>
+              <div class="item-footer">
+                <div class="rate">
+                  <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+                </div>
+                <a href="#"
+                  >Know Details
+                  <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="button">
+          <a href="">
+            Browse more courses
+            <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="choice">
+      <div class="container">
+        <div class="none"></div>
+        <div class="content">
+          <div class="item">
+            <div class="icon">
+              <i
+                class="fa fa-american-sign-language-interpreting"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <div class="main">
+              <h5>Flexible Classes</h5>
+              <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon">
+              <i
+                class="fa fa-american-sign-language-interpreting"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <div class="main">
+              <h5>Flexible Classes</h5>
+              <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon">
+              <i
+                class="fa fa-american-sign-language-interpreting"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <div class="main">
+              <h5>Flexible Classes</h5>
+              <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon">
+              <i
+                class="fa fa-american-sign-language-interpreting"
+                aria-hidden="true"
+              ></i>
+            </div>
+            <div class="main">
+              <h5>Flexible Classes</h5>
+              <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="number">
+      <div class="container">
+        <div class="title">
+          <h3>Strength in <span>Numbers</span></h3>
+          <div class="line1"></div>
+          <br />
+          <div class="line2"></div>
+          <div class="title-text">
+            <p>
+              Similique sunt in culpa qui officia deserunt mollitia animi, id
+              est laborum et dolorum fuga.
+            </p>
+          </div>
+        </div>
+        <div class="main">
+          <div class="item">
+            <h4 class="counter">6,300</h4>
+            <p>LEARNERS & COUNTING</p>
+          </div>
+          <div class="item">
+            <h4 class="counter">638</h4>
+            <p>TOTAL COURSES</p>
+          </div>
+          <div class="item">
+            <h4 class="counter">7,600</h4>
+            <p>SUCCESSFUL STUDENTS</p>
+          </div>
+          <div class="item item1">
+            <h4 class="counter">36</h4>
+            <p>LANGUAGES</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="container">
+        <div class="title">
+          <h3>Strength in <span>Numbers</span></h3>
+          <div class="line1"></div>
+          <br />
+          <div class="line2"></div>
+        </div>
+        <div class="main">
+          <div class="row">
+            <div class="col">
+              <div class="content">
+                <div class="text">
+                  <p>
+                    Nam libero tempore, cum soluta nobis est eligendi optio
+                    cumque nihil impedit.
+                  </p>
+                </div>
+                <div class="info">
+                  <div class="ava">
+                    <img
+                      src="https://demo.w3layouts.com/demos_new/template_demo/13-03-2021/studious-liberty-demo_Free/425342591/web/assets/images/testi2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <h5>Petey Cruis</h5>
+                    <span> Caption Here </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="content">
+                <div class="text">
+                  <p>
+                    Nam libero tempore, cum soluta nobis est eligendi optio
+                    cumque nihil impedit.
+                  </p>
+                </div>
+                <div class="info">
+                  <div class="ava">
+                    <img
+                    src=https://demo.w3layouts.com/demos_new/template_demo/13-03-2021/studious-liberty-demo_Free/425342591/web/assets/images/testi1.jpg
+                    alt="" />
+                  </div>
+                  <div class="name">
+                    <h5>Molive Joe</h5>
+                    <span> Caption Here </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="content">
+                <div class="text">
+                  <p>
+                    Nam libero tempore, cum soluta nobis est eligendi optio
+                    cumque nihil impedit.
+                  </p>
+                </div>
+                <div class="info">
+                  <div class="ava">
+                    <img
+                    src=https://demo.w3layouts.com/demos_new/template_demo/13-03-2021/studious-liberty-demo_Free/425342591/web/assets/images/testi3.jpg
+                    alt="" />
+                  </div>
+                  <div class="name">
+                    <h5>Petey Cruis</h5>
+                    <span> Caption Here </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="instructors">
+      <div class="container">
+        <div class="title">
+          <h3>World Class <span>Instructors</span></h3>
+          <div class="line1"></div>
+          <br />
+          <div class="line2"></div>
+        </div>
+        <div class="main">
+          <div class="row">
+            <div class="col">
+              <div class="content">
+                <div class="inline">
+                  <div class="img">
+                    <img src="./img/team1.jpg" alt="" />
+                  </div>
+                  <div class="hidden">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <h5><a href="#"> Olive Yew</a></h5>
+                  <p>Teaches Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="content">
+                <div class="inline">
+                  <div class="img">
+                    <img src="./img/team2.jpg" alt="" />
+                  </div>
+                  <div class="hidden">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <h5><a href="#"> Olive Yew</a></h5>
+                  <p>Teaches Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="content">
+                <div class="inline">
+                  <div class="img">
+                    <img src="./img/team3.jpg" alt="" />
+                  </div>
+                  <div class="hidden">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <h5><a href="#"> Olive Yew</a></h5>
+                  <p>Teaches Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="content">
+                <div class="inline">
+                  <div class="img">
+                    <img src="./img/team4.jpg" alt="" />
+                  </div>
+                  <div class="hidden">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <h5><a href="#"> Olive Yew</a></h5>
+                  <p>Teaches Design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- bootstrap -->
     <script
@@ -107,5 +794,49 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <!-- iquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+      integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".counter").counterUp({
+        delay: 20,
+        time: 2000,
+      });
+    </script>
+    <!-- owl -->
+    <script src="./owlcarousel/dist/owl.carousel.min.js"></script>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        dots: true,
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
