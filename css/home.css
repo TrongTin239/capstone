@@ -10,20 +10,20 @@ body {
   font-family: "Roboto", sans-serif;
 }
 #myBtn {
-  display: none; 
+  display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px; 
-  z-index: 99; 
-  border: none; 
-  outline: none; 
-  background-color:#0d369f;
-  color: white; 
-  cursor: pointer; 
-  padding: 15px; 
-  border-radius: 10px; 
-  font-size: 12px; 
- width: 50px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #0d369f;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 12px;
+  width: 50px;
 }
 
 header {
@@ -95,6 +95,10 @@ header {
 }
 .navbar-collapse {
   flex-grow: 0;
+}
+.header-fix {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-fix .navbar-light .navbar-brand {
@@ -665,6 +669,8 @@ header {
 }
 .choice .item .icon {
   flex: 0 0 20%;
+}
+.choice .item i {
   width: 60px;
   height: 60px;
   line-height: 60px;
@@ -1126,7 +1132,6 @@ footer .link .link-left li {
   list-style: none;
 }
 
-
 footer .link .link-left i {
   font-size: 9px;
   margin-right: 10px;
@@ -1190,4 +1195,176 @@ footer .link .link-right a:hover i {
 .footer-text .main {
   padding: 20px 0;
   color: #cecece;
+}
+
+@media screen and (max-width: 576px) {
+  .header-info {
+    display: none;
+  }
+  header {
+    width: 576px;
+    position: fixed;
+    padding: 0;
+  }
+  .header-fix {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav {
+    width: 100%;
+  }
+  .navbar-expand-lg {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+  .navbar-expand-lg .navbar-nav {
+    text-align: center;
+  }
+  .input-search {
+    text-align: center;
+  }
+  .input-search form {
+    width: 50%;
+    margin: auto;
+  }
+  .slide {
+    background-position: right;
+    background-size: cover;
+    height: 75vh;
+  }
+  .slide-content {
+    padding-left: 20px;
+    padding-top: 40px;
+  }
+  .slide-content h1 {
+    width: 500px;
+    font-size: 45px;
+  }
+  .card .container .content {
+    flex-direction: column;
+  }
+  .card .container .content .item i {
+    font-size: 60px;
+  }
+  .card .container .content .item a {
+    font-size: 30px;
+  }
+  .studious .container .title h3 {
+    font-size: 50px;
+  }
+  .container .stu-card {
+    flex-wrap: wrap;
+  }
+  .container .stu-card .info {
+    flex: 0 0 50%;
+    margin-bottom: 10px;
+  }
+  .started .container .title h3 {
+    font-size: 50px;
+  }
+  .started .container .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .started .container .col .item-down .price {
+    margin-left: 420px;
+  }
+  .choice {
+    height: auto;
+  }
+  .choice .container .none {
+    display: none;
+  }
+  .choice .container {
+    display: block;
+    max-height: max-content;
+  }
+  .choice .content {
+    padding: 50px 0 80px 0;
+    width: 100%;
+  }
+  .choice .container .item {
+    flex: 0 0 100%;
+  }
+
+  .choice .item i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: rgb(13 54 159 / 9%);
+    color: #0d369f;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+  .number .container .title h3 {
+    font-size: 45px;
+  }
+  .number .container .title .title-text {
+    font-size: 16px;
+  }
+  .number .container .main {
+    flex-wrap: wrap;
+  }
+  .number .container .main .item {
+    flex: 0 0 50%;
+  }
+  .feedback .main .row .col {
+    flex: 0 0 100%;
+  }
+  .instructors .container {
+    max-width: 576px;
+    padding: 0;
+  }
+  .instructors .main {
+    width: 100%;
+  }
+  .instructors .row {
+    gap: 20px;
+  }
+  .instructors .col {
+    flex: 0 0 calc(50% - 20px);
+  }
+  .contact .container {
+    flex-direction: column;
+  }
+  .contact .container .right {
+    padding: 10px 0 0 20px;
+  }
+  .contact .container .right .content h4{
+    font-weight: 600;
+  }
+  .contact .right .content p{
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  footer .sub{
+    width: 500px;
+    flex-direction: column;
+  }
+  footer .link{
+    padding-top: 270px;
+    flex-wrap: wrap;
+  }
+  footer .link .link-left{
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+  }
+  footer .link .link-left ul{
+    margin-bottom: 20px;
+    flex: 0 0 50%;
+  }
+  footer .link .link-left .spec{
+    margin-right: 225px;
+  }
+  footer .link .link-right{
+    position: relative;
+    top: -182px;
+   right: -235px;
+   border-left: none;
+   padding: 0;
+  }
 }
