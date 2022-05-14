@@ -1197,6 +1197,83 @@ footer .link .link-right a:hover i {
   color: #cecece;
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  .header-fix .header-right {
+    flex-direction: column;
+  }
+  .navbar-expand-lg .navbar-nav {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .slide-content {
+    padding-left: 50px;
+  }
+  .slide-content h1 {
+    font-size: 45px;
+  }
+  .card .container .content{
+    flex-wrap: wrap;
+  }
+  .card .container .content .item{
+    flex: 0 0 calc( 50% - 15px)
+  }
+  .started .container .col{
+    flex: 0 0  50%;
+    max-width: 50%;
+  }
+  .choice .container .none {
+    display: none;
+  }
+  .choice .content{
+    flex: 0 0 100%;
+  }
+  .instructors .col{
+    flex: 0 0 calc(50% - 30px);
+  }
+  .contact .container {
+    flex-direction: column;
+  }
+  .contact .container .right {
+    padding: 10px 0 0 20px;
+  }
+  .contact .container .right .content h4 {
+    font-weight: 600;
+  }
+  .contact .right .content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  footer .sub{
+    width: 600px;
+    flex-direction: column;
+  }
+  footer .link {
+    padding-top: 270px;
+    flex-wrap: wrap;
+  }
+  footer .link .link-left {
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+  }
+  footer .link .link-left ul {
+    margin-bottom: 20px;
+    flex: 0 0 50%;
+  }
+  footer .link .link-left .spec {
+    margin-right: 315px;
+  }
+  footer .link .link-right {
+    position: relative;
+    top: -182px;
+    right: -235px;
+    border-left: none;
+    padding: 0;
+    margin-left: 82px;
+  }
+}
 @media screen and (max-width: 576px) {
   .header-info {
     display: none;
@@ -1218,10 +1295,6 @@ footer .link .link-right a:hover i {
     width: 100%;
   }
 
-  .navbar-expand-lg .navbar-nav {
-    text-align: center;
-    margin: 0 auto;
-  }
   .input-search {
     text-align: center;
   }
@@ -1273,9 +1346,7 @@ footer .link .link-right a:hover i {
   .choice {
     height: auto;
   }
-  .choice .container .none {
-    display: none;
-  }
+
   .choice .container {
     display: block;
     max-height: max-content;
@@ -1327,19 +1398,7 @@ footer .link .link-right a:hover i {
   .instructors .col {
     flex: 0 0 calc(50% - 20px);
   }
-  .contact .container {
-    flex-direction: column;
-  }
-  .contact .container .right {
-    padding: 10px 0 0 20px;
-  }
-  .contact .container .right .content h4 {
-    font-weight: 600;
-  }
-  .contact .right .content p {
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
+  
   footer .sub {
     width: 500px;
     flex-direction: column;
