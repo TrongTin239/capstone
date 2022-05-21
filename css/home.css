@@ -43,6 +43,7 @@ header {
 .header-top {
   display: block;
 }
+
 .header-info {
   display: flex;
   align-items: center;
@@ -112,7 +113,9 @@ header {
 .navbar-light .navbar-brand:hover {
   color: red;
 }
-
+header .theme-repon{
+  display: none;
+}
 .header-fix .logo span {
   font-size: 25px;
   font-weight: 600;
@@ -1196,10 +1199,21 @@ footer .link .link-right a:hover i {
   padding: 20px 0;
   color: #cecece;
 }
-
+@media screen and (max-width: 1200px) {
+ 
+}
 @media screen and (max-width: 768px) {
   header {
     padding: 10px;
+  }
+  header .theme{
+    display: none;
+  }
+  header .theme-repon{
+    display: block;
+  }
+  header .logo{
+    flex: 0 0 80%;
   }
   .header-fix .header-right {
     flex-direction: column;
@@ -1282,6 +1296,15 @@ footer .link .link-right a:hover i {
     width: 576px;
     position: fixed;
     padding: 0;
+  }
+  header .theme{
+    display: none;
+  }
+  header .theme-repon{
+    display: block;
+  }
+  header .logo{
+    flex: 0 0 80%;
   }
   .header-fix .header-right {
     width: 100%;

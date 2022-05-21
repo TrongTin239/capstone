@@ -40,6 +40,9 @@ header {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
+header .theme-repon {
+  display: none;
+}
 .header-top {
   display: block;
 }
@@ -776,8 +779,7 @@ footer .link .link-right a:hover i {
 
 /* reponsive */
 
-@media screen and (max-width:1200px) {
-  
+@media screen and (max-width: 1200px) {
 }
 @media screen and (max-width: 768px) {
   .header-info {
@@ -787,6 +789,15 @@ footer .link .link-right a:hover i {
     width: 768px;
     position: fixed;
     padding: 0;
+  }
+  header .theme {
+    display: none;
+  }
+  header .theme-repon {
+    display: block;
+  }
+  header .logo {
+    flex: 0 0 80%;
   }
   .header-fix .header-right {
     width: 100%;
@@ -833,7 +844,7 @@ footer .link .link-right a:hover i {
   .instructors .col {
     flex: 0 0 calc(50% - 30px);
   }
-  footer .sub{
+  footer .sub {
     width: 600px;
     flex-direction: column;
   }
@@ -870,6 +881,15 @@ footer .link .link-right a:hover i {
     width: 576px;
     position: fixed;
     padding: 0;
+  }
+  header .theme {
+    display: none;
+  }
+  header .theme-repon {
+    display: block;
+  }
+  header .logo {
+    flex: 0 0 80%;
   }
   .header-fix .header-right {
     width: 100%;
