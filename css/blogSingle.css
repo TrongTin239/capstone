@@ -282,7 +282,13 @@ header .theme-repon {
     letter-spacing: .4px;
 
 }
-
+.blog .blog-post img{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
 .blog .categories ul {
     margin-top: 20px;
 }
